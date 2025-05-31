@@ -1,0 +1,95 @@
+:root {
+    --primary: #E74D3D;
+}
+
+.header {
+    background-color: #f0f0f0;
+}
+
+.header ul li {
+    display: inline;
+    padding-right: 20px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: rgb(55, 55, 55);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.header ul li a.active {
+    color: var(--primary);
+}
+
+.header ul li a:hover {
+    color: var(--primary);
+}
+
+.header ul li.active {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.SearchBaritem input {
+    background-color: white;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    padding-left: 50px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.SearchBaritem input:focus {
+    outline: 1px solid #7e7e7e;
+    border-radius: 3px;
+}
+
+.SearchBaritem svg path {
+    fill: var(--primary);
+}
+
+.profileIcons {
+    text-align: center;
+}
+
+.profileIcons:hover svg path {
+    fill: var(--primary);
+    cursor: pointer;
+}
+
+.profileIcons span {
+    display: block;
+}
+
+.profileIcons svg {
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.profileIcons a {
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+}
+
+.accounticons li a {
+    color: black;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+
+    .SearchBaritem input {
+        max-width: 60%;
+        width: 100%;
+        padding: 10px 20px 10px 40px;
+        margin-left: 8px;
+    }
+
+}
