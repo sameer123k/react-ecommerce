@@ -10,7 +10,6 @@ import Hero2 from '../../assets/hero2.jpg';
 import Hero3 from '../../assets/hero3.jpg';
 import Hero4 from '../../assets/hero4.jpg';
 
-
 export default function hero() {
   const responsive = {
     desktop: {
@@ -34,6 +33,16 @@ export default function hero() {
     <Box className={Styles.herosection}>
       <Container fixed>
         <Carousel responsive={responsive}>
+          <Box><img src={Hero1} alt="hero" /></Box>
+          <Box><img src={Hero2} alt="hero" /></Box>
+          <Box><img src={Hero3} alt="hero" /></Box>
+          <Box><img src={Hero4} alt="hero" /></Box>
+
+          <Box><img src={Hero1} alt="hero" /></Box>
+          <Box><img src={Hero2} alt="hero" /></Box>
+          <Box><img src={Hero3} alt="hero" /></Box>
+
+          <Box><img src={Hero4} alt="hero" /></Box>
           <Box><img src={Hero1} alt="hero" /></Box>
           <Box><img src={Hero2} alt="hero" /></Box>
           <Box><img src={Hero3} alt="hero" /></Box>

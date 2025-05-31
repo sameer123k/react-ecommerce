@@ -1,0 +1,56 @@
+:root {
+    --primary: #E74D3D;
+}
+
+.Productssection {
+    padding: 0 0 40px;
+}
+
+.Productssection .card .CardContent p {
+    font-size: 12px;
+}
+
+.Productssection .card .CardContent h4 {
+    font-size: 15px;
+    padding: 5px 0;
+    font-weight: 600;
+}
+
+.Productssection .card .CardContent h4:hover {
+    color: var(--primary);
+}
+
+.Productssection .card .CardContent h5 {
+    font-size: 17px;
+    padding: 5px 0;
+    font-weight: 700;
+    color: #000;
+}
+
+.Productssection .card .CardContent h5 del {
+    font-size: 14px;
+}
+
+.Productssection .card .CardContent h5 mark {
+    color: green;
+    font-size: 14px;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.Productssection .card .CardContent h6 {
+    font-size: 14px;
+}
+
+.Productssection .card .cardImg {
+    object-position: top;
+    max-height: 210px;
+    height: 100%;
+}
+
+.Productssection .card .Btn {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 12px;
+}
