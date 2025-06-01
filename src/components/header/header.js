@@ -97,6 +97,9 @@ export default function Header() {
         setAnchorEl(null);
     };
 
+    // mobile view 
+    const [toggle, setToggle] = useState(window.innerWidth > 700);
+
     return (
         <>
             <Box sx={{ flexGrow: 1 }}>
@@ -105,7 +108,7 @@ export default function Header() {
                         <Box>
                             <Toolbar>
                                 <img src={Logo} alt="logo" height={40} />
-                                <Box className={Styles.navMenus} sx={{ display: { xs: 'none', md: 'block' } }}>
+                                <Box className={Styles.navMenus} style={{ display: toggle ? "block" : "none" }} sx={{ display: { xs: 'none', md: 'block' } }}>
                                     <ul>
                                         <li><a className={Styles.active} href="/">Home</a></li>
                                         <li><a href="#">Men's</a></li>
@@ -128,8 +131,8 @@ export default function Header() {
                                     <IconButton
                                         size="large"
                                         edge="start"
-                                        color="inherit"
-                                        aria-label="open drawer"
+                                        color="inherit" onClick={() => setToggle(toggleBefore => !toggleBefore)}
+                                        className={Styles.Togglebtn}
                                         sx={{ display: { xs: 'block', md: 'none', marginLeft: '5px' } }}
                                     >
                                         <MenuIcon />
@@ -142,7 +145,7 @@ export default function Header() {
                         <Toolbar>
                             <Box sx={{ width: '100%' }}>
                                 <React.Fragment>
-                                    <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'end', textAlign: 'center' }}>
+                                    <Box className={Styles.headerCartBtn} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'end', textAlign: 'center' }}>
                                         <IconButton >
                                             <AddShoppingCartIcon />
                                         </IconButton>

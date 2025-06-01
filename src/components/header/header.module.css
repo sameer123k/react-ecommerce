@@ -86,10 +86,48 @@
 @media only screen and (min-width:320px) and (max-width:768px) {
 
     .SearchBaritem input {
-        max-width: 60%;
+        max-width: 95%;
         width: 100%;
         padding: 10px 20px 10px 40px;
         margin-left: 8px;
     }
 
+    .SearchBaritem {
+        position: absolute !important;
+        top: 100%;
+        left: 0;
+        width: 100% !important;
+    }
+
+    .Togglebtn {
+        position: absolute;
+        right: 80px;
+        top: 6px;
+    }
+
+    .navMenus ul {
+        position: fixed;
+        left: 0;
+        height: 100vh;
+        z-index: 9999;
+        padding: 0;
+        flex-direction: column;
+        display: flex;
+        max-width: 50%;
+        background: #fff;
+        width: 100%;
+        top: 40px;
+    }
+
+    .navMenus ul li {
+        padding: 12px 15px;
+    }
+
+    .navMenus ul li:hover {
+        background-color: #f0f0f0;
+    }
+
+    .navMenus ul li a {
+        color: #000;
+    }
 }
