@@ -1,0 +1,380 @@
+.productHero {
+    padding: 40px 0;
+}
+
+.productHero .buybtns {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.productHero .buybtns .addtoCart {
+    background-color: #fff;
+    border: 1px solid #878787;
+    border-radius: 20px;
+    padding: 0 30px;
+    font-weight: 600;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    line-height: 0em;
+}
+
+.productHero .buybtns .buyNow {
+    background-color: #e74d3d;
+    border: none;
+    border-radius: 20px;
+    padding: 0 30px;
+    color: #fff;
+    height: 40px;
+    line-height: 0em;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.productHero .productImg {
+    display: flex;
+    /*  position: sticky;
+        top: 80px;*/
+}
+
+.productHero .productImg .images ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.productHero .productImg .images {
+    flex: 0 0 20%;
+    height: 450px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.productHero .productImg .images ul li {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.productHero .productImg .images ul li:focus {
+    border: 1px solid #000;
+}
+
+.productHero .productImg .images ul li img {
+    height: 76px;
+    width: 76px;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.productHero .productImg .imagesShow {
+    text-align: center;
+    border: 1px solid rgb(217 217 217);
+    padding: 20px;
+    overflow: hidden;
+    max-height: 600px;
+    position: relative;
+}
+
+.productHero .productImg .imagesShow .heartDiv {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+    z-index: 1;
+    top: 15px;
+}
+
+.productHero .productImg .imagesShow .heartDiv i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #b8b8b8;
+}
+
+.productHero .productImg .imagesShow img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.productHero .productImg .imagesShow .heartDiv .red {
+    color: red;
+}
+
+.productHero .productImg .imagesShow img:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.productHero .productDetail small {
+    color: #898989;
+    color: #000;
+    font-size: 13px;
+}
+
+.productHero .productDetail h4 span {
+    font-size: 25px;
+    margin: 10px 0;
+    color: var(--primary);
+}
+
+.productHero .productDetail h5 {
+    margin: 0 0 10px 0;
+}
+
+.productHero .productDetail .size {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+}
+
+.productHero .productDetail .size select {
+    padding: 4px 6px;
+}
+
+.productHero .productDetail .size span {
+    text-transform: capitalize;
+}
+
+.productHero .productDetail .psproductdesc {
+    padding: 20px 0 0;
+}
+
+.productHero .productDetail .pslistdot {
+    list-style-type: none;
+    padding: 8px 0;
+}
+
+.productHero .productDetail .pslistdot li {
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 2px 0;
+}
+
+.productHero .productDetail .pslistdot li img {
+    height: 17px;
+    width: auto;
+    padding-right: 3px;
+}
+
+
+/*   .productHero .productDetail p {
+        font-size: 17px;
+        font-weight: 600;
+        color: #636363;
+    }*/
+
+.productHero .productDetail h1 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #636363;
+}
+
+.productHero .productDetail .benefits {
+    padding: 10px 0;
+}
+
+.productHero .productDetail .benefits ul {
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+}
+
+.productHero .productDetail .benefits ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productHero .productDetail .benefits ul li img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 5px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.productHero .productDetail .benefits ul li span {
+    font-weight: 600;
+    margin: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.productHero .productDetail .size .buttons {
+    margin: 10px 0;
+}
+
+.productHero .productDetail .size .buttons button {
+    background-color: #fff;
+    color: #7e7e7e;
+    font-size: 14px;
+    padding: 3px 8px;
+    border: 1px solid #7a7a7a;
+    margin: 0 5px;
+}
+
+.productHero .productDetail .size .buttons .active {
+    border: 1px solid #474747;
+    cursor: pointer;
+}
+
+.productHero .productDetail .size .buttons .active a {
+    text-decoration: none;
+    color: #000;
+}
+
+.productHero .productDetail .mrp {
+    padding: 8px 0;
+}
+
+.productHero .productDetail .mrp label span {
+    font-size: 16px;
+    color: #162d0f;
+}
+
+.productHero .productDetail .mrp .popularProductsPrice {
+    margin: 8px 0;
+}
+
+.productHero .productDetail .mrp .popularProductsPrice label .offSpan span {
+    color: #000;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.productHero .productDetail .mrp .popularProductsPrice label strong {
+    font-size: 22px;
+}
+
+.productHero .productDetail .mrp .popularProductsPrice label strong span {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.productHero .productDetail .mrp .popularProductsPrice label del {
+    margin: 0 5px;
+    color: gray;
+}
+
+.productHero .productDetail .mrp .popularProductsPrice label del span {
+    font-size: 14px;
+}
+
+.productHero .productDetail .buybtns button {
+    max-width: 100%;
+    width: 100%;
+}
+
+.productHero .productDetail .buybtns {
+    display: flex;
+    gap: 15px;
+}
+
+.productHero .productDetail .buybtns .addtoCart {
+    background-color: #fff;
+    border: 1px solid #878787;
+    border-radius: 20px;
+    padding: 0 30px;
+    font-weight: 600;
+    height: 40px;
+    line-height: 0em;
+    cursor: pointer;
+}
+
+.productHero .productDetail .buybtns .buyNow {
+    background-color: #e74d3d;
+    border: none;
+    border-radius: 20px;
+    padding: 0 30px;
+    color: #fff;
+    height: 40px;
+    line-height: 0em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.productHero .productDetail .secureDetails ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.productHero .productDetail .secureDetails ul li {
+    color: #028c50;
+    font-size: 15px;
+}
+
+.productHero .productDetail .secureDetails ul li svg {
+    height: 20px;
+    padding-right: 4px;
+}
+
+.productContent {
+    padding: 25px;
+}
+
+.productContent img {
+    width: 100%;
+}
+
+.productBenefits ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.productBenefits ul li {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.productBenefits ul li strong {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.productBenefits ul li::before {
+    content: "\226B";
+    color: #e74d3d;
+    font-size: 20px;
+}
+
+.AllProducts {
+    padding-bottom: 30px;
+    background-color: #f0f0f0;
+    margin: 25px 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.AllProducts .headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+}
+
+.AllProducts .headings h2 {
+    color: #162d0f;
+    font-family: "Montserrat";
+    margin: 0;
+    font-size: 20px;
+}
+
+.AllProducts .headings a {
+    color: #162d0f;
+    font-family: "poppins";
+    font-size: 15px;
+}
+
+.imgresponsive {
+    max-width: 100%;
+}

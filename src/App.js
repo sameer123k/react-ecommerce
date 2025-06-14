@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Index from './pages/index';
 import Register from './pages/register';
 import Login from './pages/login';
+import Cart from './pages/cart';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path="Register" element={<Register />} />
         <Route path="Login" element={<Login />} />
+        <Route path="/Cart" element={<Cart />} />
       </Routes>
     </BrowserRouter>
   );
