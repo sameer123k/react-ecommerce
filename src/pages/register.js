@@ -19,6 +19,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function register() {
+    document.title = "Register";
     return (
         <Box>
             <Grid container spacing={2}>

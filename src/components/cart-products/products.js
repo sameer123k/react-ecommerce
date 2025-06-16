@@ -7,7 +7,26 @@ import Grid from '@mui/material/GridLegacy';
 import Shirt from '../../assets/blazzer.jpg';
 import OfferImg from "../../assets/offer.png";
 
-export default function products() {
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+
+export default function Products() {
+
+    const [open, setOpen] = React.useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
     return (
         <>
             <Box sx={{ flexGrow: 1 }} className={Styles.productHero}>
@@ -147,7 +166,7 @@ export default function products() {
 
                             <Box className={Styles.buybtns}>
 
-                                <input type="submit" value="Add to Cart" className={Styles.addtoCart} />
+                                <input type="submit" onClick={handleClickOpen} value="Add to Cart" className={Styles.addtoCart} />
 
                                 <input type="submit" value="Buy Now" className={Styles.buyNow} />
                             </Box>
@@ -175,6 +194,30 @@ export default function products() {
                     </Grid>
                 </Grid>
             </Box>
+
+            {/* popup  */}
+            <React.Fragment>
+                <Dialog
+                    open={open}
+                    onClose={handleClose}
+                    slotProps={{
+                        paper: {
+                            component: 'form',
+                        },
+                    }}
+                >
+                    <DialogTitle>Need to Login First !</DialogTitle>
+                    <DialogContent>
+                        <DialogContentText>
+                            Access to this feature or page requires you to be logged in. Please log in to your account to continue. If you don’t have an account yet, you can sign up quickly to get started.
+                        </DialogContentText>
+                    </DialogContent>
+                    <DialogActions>
+                        <Button onClick={handleClose}>Cancel</Button>
+                        {/* <But type="submit">Subscribe</But    ton> */}
+                    </DialogActions>
+                </Dialog>
+            </React.Fragment>
         </>
     )
 }

@@ -7,6 +7,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/GridLegacy';
 import Loginomponent from '../components/loginform/loginform';
 export default function login() {
+   document.title = "Login";
   return (
     <Box>
       <Grid container spacing={2}>

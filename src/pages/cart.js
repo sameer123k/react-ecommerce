@@ -20,6 +20,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 
 export default function cart() {
+  document.title = "Cart";
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
