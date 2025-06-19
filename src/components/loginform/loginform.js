@@ -1,8 +1,41 @@
-import React from 'react';
+import { React, useState } from 'react';
 import Styles from './login.module.css';
 import { Box } from '@mui/material';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-export default function loginform() {
+export default function Loginform() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const navigate = useNavigate();
+
+  const [showAdvancedOptions, setShowAdvancedOptions] = useState(false);
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // console.log('Login Data:', formData);
+    // Add your login logic here
+
+    let email1 = 'sameerkhan9991303458@gmail.com';
+    let password1 = 'sameer123';
+    if (email1 == formData.email && password1 == formData.password) {
+      alert('Login Successfull');
+      navigate('/');
+      localStorage.setItem('loginData', JSON.stringify(formData));
+    }
+    else {
+      alert('Invalid Details Try Again');
+    }
+
+  };
   return (
     <Box>
       <Box className={Styles.formcontainer}>
@@ -10,13 +43,13 @@ export default function loginform() {
         <form className={Styles.form}>
           <Box className={Styles.inputgroup}>
             <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" required placeholder="" />
+            <input type="email" name="email" id="email" value={formData.email} onChange={handleChange} required placeholder="" />
           </Box>
           <Box className={Styles.inputgroup}>
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" required placeholder="" />
+            <input type="password" name="password" id="password" value={formData.password} onChange={handleChange} required placeholder="" />
           </Box>
-          <button className={Styles.sign}>Login</button>
+          <button className={Styles.sign} onClick={handleSubmit}><Link to="#">Login </Link></button>
         </form>
         <Box className={Styles.socialmessage}>
           <Box className={Styles.line}></Box>

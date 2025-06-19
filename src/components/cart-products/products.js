@@ -14,6 +14,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import { Link } from 'react-router-dom';
 
 export default function Products() {
 
@@ -26,6 +27,16 @@ export default function Products() {
     const handleClose = () => {
         setOpen(false);
     };
+
+    // local storage data fetch 
+
+    let FetchedData = localStorage.getItem('loginData');
+    let newData = JSON.parse(FetchedData);
+    // alert(FetchedData);
+
+    if (FetchedData != null) {
+
+    }
 
     return (
         <>
@@ -166,9 +177,9 @@ export default function Products() {
 
                             <Box className={Styles.buybtns}>
 
-                                <input type="submit" onClick={handleClickOpen} value="Add to Cart" className={Styles.addtoCart} />
+                                <Button className={Styles.addcart} ><Link to="/Cart">Add To Cart </Link></Button>
 
-                                <input type="submit" value="Buy Now" className={Styles.buyNow} />
+                                <Button className={Styles.buyNow} onClick={handleClickOpen}><Link to="#">Buy Now </Link></Button>
                             </Box>
                             <Box className={Styles.psproductdesc}>
                                 <mark>Available offers</mark>
@@ -206,7 +217,7 @@ export default function Products() {
                         },
                     }}
                 >
-                    <DialogTitle>Need to Login First !</DialogTitle>
+                    <DialogTitle sx={{ color: 'green' }}>Need to Login First !</DialogTitle>
                     <DialogContent>
                         <DialogContentText>
                             Access to this feature or page requires you to be logged in. Please log in to your account to continue. If you don’t have an account yet, you can sign up quickly to get started.
@@ -214,7 +225,7 @@ export default function Products() {
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={handleClose}>Cancel</Button>
-                        {/* <But type="submit">Subscribe</But    ton> */}
+                        <Button>  <Link to="../../Login">  Login </Link></Button>
                     </DialogActions>
                 </Dialog>
             </React.Fragment>

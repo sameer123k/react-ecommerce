@@ -290,6 +290,7 @@
     height: 40px;
     line-height: 0em;
     cursor: pointer;
+    max-width: 200px;
 }
 
 .productHero .productDetail .buybtns .buyNow {
@@ -302,6 +303,28 @@
     line-height: 0em;
     font-weight: 600;
     cursor: pointer;
+    max-width: 200px;
+}
+
+.productHero .productDetail .buybtns .addcart {
+    background-color: #000;
+    border: none;
+    border-radius: 20px;
+    padding: 0 30px;
+    color: #fff;
+    height: 40px;
+    line-height: 0em;
+    font-weight: 600;
+    cursor: pointer;
+    max-width: 200px;
+}
+.productHero .productDetail .buybtns .buyNow a{
+    color: white;
+    text-decoration: none;
+}
+.productHero .productDetail .buybtns .addcart a{
+    color: white;
+    text-decoration: none;
 }
 
 .productHero .productDetail .secureDetails ul {

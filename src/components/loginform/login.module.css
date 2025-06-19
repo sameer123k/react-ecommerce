@@ -78,6 +78,10 @@
   font-weight: 600;
   margin-top: 20px;
 }
+.sign a{
+  color: #fff;
+  text-decoration: none;
+}
 
 .socialmessage {
   display: flex;

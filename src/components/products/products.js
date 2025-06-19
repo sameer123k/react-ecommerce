@@ -61,7 +61,7 @@ export default function products() {
                         </CardActionArea>
                         <CardActions>
                             <Button size="small" className={Styles.Btn}>
-                                <Link to="/cart" > Add To Cart</Link>
+                                <Link to="/ProductDetail" > Buy Now</Link>
                             </Button>
                         </CardActions>
                     </Card>
@@ -94,8 +94,8 @@ export default function products() {
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                         <Button size="small" className={Styles.Btn}>
-                                <Link to="/cart" > Add To Cart</Link>
+                            <Button size="small" className={Styles.Btn}>
+                                <Link to="/ProductDetail" > Buy Now</Link>
                             </Button>
                         </CardActions>
                     </Card>
@@ -128,8 +128,8 @@ export default function products() {
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                          <Button size="small" className={Styles.Btn}>
-                                <Link to="/cart" > Add To Cart</Link>
+                            <Button size="small" className={Styles.Btn}>
+                                <Link to="/ProductDetail" > Buy Now</Link>
                             </Button>
                         </CardActions>
                     </Card>
@@ -162,8 +162,8 @@ export default function products() {
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                           <Button size="small" className={Styles.Btn}>
-                                <Link to="/cart" > Add To Cart</Link>
+                            <Button size="small" className={Styles.Btn}>
+                                <Link to="/ProductDetail" > Buy Now</Link>
                             </Button>
                         </CardActions>
                     </Card>
@@ -201,8 +201,8 @@ export default function products() {
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                        <Button size="small" className={Styles.Btn}>
-                                <Link to="/cart" > Add To Cart</Link>
+                            <Button size="small" className={Styles.Btn}>
+                                <Link to="/ProductDetail" > Buy Now</Link>
                             </Button>
                         </CardActions>
                     </Card>
@@ -235,8 +235,8 @@ export default function products() {
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                          <Button size="small" className={Styles.Btn}>
-                                <Link to="/cart" > Add To Cart</Link>
+                            <Button size="small" className={Styles.Btn}>
+                                <Link to="/ProductDetail" > Buy Now</Link>
                             </Button>
                         </CardActions>
                     </Card>
@@ -269,8 +269,8 @@ export default function products() {
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                          <Button size="small" className={Styles.Btn}>
-                                <Link to="/cart" > Add To Cart</Link>
+                            <Button size="small" className={Styles.Btn}>
+                                <Link to="/ProductDetail" > Buy Now</Link>
                             </Button>
                         </CardActions>
                     </Card>
@@ -303,8 +303,8 @@ export default function products() {
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                          <Button size="small" className={Styles.Btn}>
-                                <Link to="/cart" > Add To Cart</Link>
+                            <Button size="small" className={Styles.Btn}>
+                                <Link to="/ProductDetail" > Buy Now</Link>
                             </Button>
                         </CardActions>
                     </Card>
