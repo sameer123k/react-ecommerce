@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box } from '@mui/material';
 import Styles from './cart.module.css';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/GridLegacy';
 import img1 from '../../assets/blazzer.jpg';
+import Container from '@mui/material/Container';
+import DeleteIcon from '@mui/icons-material/Delete';
+import Button from '@mui/material/Button';
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -19,92 +22,122 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function Cart() {
+
+    const [finalVal, setValue] = useState(1);
+
+    function minus() {
+        setValue(finalVal - 1);
+    }
+
+    function plus() {
+        setValue(finalVal + 1);
+    }
+
     return (
-        <Box sx={{ flexGrow: 1 }} className={Styles.shoppingCart}>
-            <Grid container spacing={2}>
-                <Grid item xs={8}>
-                    <Box className={Styles.product1}>
-                        <Box className={Styles.leftCol}>
-                            <Box>
-                                <img src={img1} />
-                            </Box>
-                            <Box>
-                                <h5>
-                                    Ashirwad Aata
-                                </h5>
-                                <p>
-                                    <label>Color : White</label>
-
-                                    <label>Size : 1KG</label>
-                                </p>
-                                <h6>
-
-
-                                    <del>₹59.00</del><strong>₹53.10</strong><span>10.00% off </span>
-
-                                </h6>
-
-                                <Box className={Styles.quantity}>
-                                    <input className={Styles.quantity__minus} type="button" value="-" />
-                                    <input id="quantity" name="quantity" type="text" class="quantity__input" value="1" readonly="readonly" />
-                                    <input class="quantity__minus" type="button" onclick="fn_quantityplus(this,1,1)" value="+" />
+        <Box className={Styles.shoppingCart} sx={{ padding: 0 }}>
+            <Container>
+                <Grid container spacing={2} sx={{ paddingTop: 3, paddingBottom: 3 }}>
+                    <Grid item lg={8}>
+                        <Box className={Styles.product1}>
+                            <Box className={Styles.leftCol}>
+                                <Box>
+                                    <img src={img1} />
                                 </Box>
+                                <Box>
+                                    <h5>
+                                        Men Solid Single Breasted Formal Blazer
+                                    </h5>
+                                    <h6>PETER ENGLAND</h6>
+                                    <p> Black Color       </p>
+                                    <h4 className={Styles.PriceSection}>₹ 1799/- <del>3,999/-</del> <mark> 57% off</mark></h4>
+
+                                    <Box className={Styles.quantity}>
+                                        <input type="button" value="-" onClick={minus} />
+                                        <h6> {finalVal} </h6>
+                                        <input type="button" value="+" onClick={plus} />
+                                    </Box>
+                                </Box>
+
+                            </Box>
+                            <Box className={Styles.rightCol}>
+
+                                <Button startIcon={<DeleteIcon />}> Remove Cart</Button>
+
+                            </Box>
+                        </Box>
+                        <Box className={Styles.product1}>
+                            <Box className={Styles.leftCol}>
+                                <Box>
+                                    <img src={img1} />
+                                </Box>
+                                <Box>
+                                    <h5>
+                                        Men Solid Single Breasted Formal Blazer
+                                    </h5>
+                                    <h6>PETER ENGLAND</h6>
+                                    <p> Black Color       </p>
+                                    <h5 className={Styles.PriceSection}>₹ 1799/- <del>3,999/-</del> <mark> 57% off</mark></h5>
+
+                                    <Box className={Styles.quantity}>
+                                        <input type="button" value="-" />
+                                        <h6> 1</h6>
+                                        <input type="button" value="+" />
+                                    </Box>
+                                </Box>
+
+                            </Box>
+                            <Box className={Styles.rightCol}>
+
+                                <Button startIcon={<DeleteIcon />}> Remove Cart</Button>
+
+                            </Box>
+                        </Box>
+                    </Grid>
+                    <Grid item lg={4}>
+                        <Box className={Styles.cartPricing}>
+                            <h4>Price Details</h4>
+                            <Box className={Styles.price}>
+                                <h5>Price (
+                                    <span>2-</span>
+                                    item ) </h5>
+                                <p>
+                                    ₹<span>3598.00</span>
+                                </p>
+                            </Box>
+                            <Box className={Styles.price}>
+                                <h5>Discount </h5>
+                                <p>
+                                    <span>10.00</span>%
+                                </p>
+                            </Box>
+                            <Box className={Styles.price}>
+                                <h5>Delivery Charges </h5>
+                                <p>
+                                    <span>0.00</span>
+                                </p>
                             </Box>
 
-                        </Box>
-                        <Box className={Styles.rightCol}>
+                            <hr />
+                            <Box className={Styles.total}>
+                                <h5>Total Amount </h5>
+                                <p>
+                                    ₹<span>3,238/-</span>
+                                </p>
+                            </Box>
 
-                            <input type="submit" value="Remove Cart" />
-                            <input type="hidden" value="1" />
 
+                            <Box>
+                                <strong>You will save ₹<span>4,760/-</span>
+                                    on this order</strong>
+                            </Box>
+
+                            <Box class="col-lg-12">
+                                <p className={Styles.btnsuccess}>Place Order</p>
+                            </Box>
                         </Box>
-                    </Box>
+                    </Grid>
                 </Grid>
-                <Grid item xs={4}>
-                    <Box className={Styles.cartPricing}>
-                        <h4>Price Details</h4>
-                        <Box className={Styles.price}>
-                            <h5>Price (
-                                <span id="ctl00_ContentPlaceHolder1_lbltotalitem">1</span>
-                                item ) </h5>
-                            <p>
-                                ₹<span id="ctl00_ContentPlaceHolder1_lbltotalprice">59.00</span>
-                            </p>
-                        </Box>
-                        <Box className={Styles.price}>
-                            <h5>Discount </h5>
-                            <p>
-                                <span id="ctl00_ContentPlaceHolder1_lblTotalDiscount">10.00</span>%
-                            </p>
-                        </Box>
-                        <Box className={Styles.price}>
-                            <h5>Delivery Charges </h5>
-                            <p>
-                                <span id="ctl00_ContentPlaceHolder1_lbldeliverycharge">0.00</span>
-                            </p>
-                        </Box>
-
-
-                        <Box className={Styles.total}>
-                            <h5>Total Amount </h5>
-                            <p>
-                                ₹<span id="ctl00_ContentPlaceHolder1_lbltotalprice1">53.10</span>
-                            </p>
-                        </Box>
-
-
-                        <Box>
-                            <strong>You will save ₹<span>5.90</span>
-                                on this order</strong>
-                        </Box>
-
-                        <Box class="col-lg-12">
-
-                            <p class="w-100 btn btn-success" id="placeorder">Place Order</p>
-                        </Box>
-                    </Box>
-                </Grid>
-            </Grid>
+            </Container>
         </Box>
     )
 }

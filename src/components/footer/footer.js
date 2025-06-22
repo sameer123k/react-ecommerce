@@ -145,7 +145,7 @@ export default function footer() {
                     </Grid>
                     <Grid size={12}>
                         <Box className={Styles.copyright}>
-                            <p>© 2025 skmart | All Rights Reserved</p>
+                            <p>© 2025 | Made by Sameer Khan</p>
                         </Box>
                     </Grid>
                 </Grid>
