@@ -6,7 +6,6 @@ import Grid from '@mui/material/GridLegacy';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import Products from '../components/cart-products/products';
-import Otherproducts from '../components/products/products';
 import { Container } from '@mui/material';
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -34,14 +33,7 @@ export default function ProductDetail() {
           <Grid item xs={12}>
             <Products />
           </Grid>
-
-          <Grid item xs={12}>
-            <Container maxWidth="lg">
-              <h3>Related Products</h3>
-            </Container>
-            <Otherproducts />
-
-          </Grid>
+      
 
           <Grid item xs={12}>
             <Footer />

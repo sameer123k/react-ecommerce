@@ -6,6 +6,8 @@ import Register from './pages/register';
 import Login from './pages/login';
 import ProductDetail from './pages/productDetail';
 import Cart from './pages/cart';
+import NotFound from './components/not-found/notfound';
+import Adminlogin from './pages/admin-login';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="Login" element={<Login />} />
         <Route path="/ProductDetail" element={<ProductDetail />} />
         <Route path="/Cart" element={<Cart />} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="admin-login" element={<Adminlogin />} />
       </Routes>
     </BrowserRouter>
   );

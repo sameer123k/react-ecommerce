@@ -1,0 +1,6 @@
+.notfound img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    height: calc(100vh - 10px);
+}
