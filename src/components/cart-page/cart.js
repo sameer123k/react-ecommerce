@@ -8,7 +8,7 @@ import img1 from '../../assets/blazzer.jpg';
 import Container from '@mui/material/Container';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Button from '@mui/material/Button';
-
+import { Link } from 'react-router-dom';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: '#fff',
@@ -124,15 +124,12 @@ export default function Cart() {
                                     ₹<span>3,238/-</span>
                                 </p>
                             </Box>
-
-
                             <Box>
                                 <strong>You will save ₹<span>4,760/-</span>
                                     on this order</strong>
                             </Box>
-
                             <Box class="col-lg-12">
-                                <p className={Styles.btnsuccess}>Place Order</p>
+                                <Link to="../Address"> <p className={Styles.btnsuccess}>Place Order</p></Link>
                             </Box>
                         </Box>
                     </Grid>

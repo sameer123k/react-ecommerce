@@ -32,7 +32,7 @@ export default function products() {
         <Container fixed className={Styles.Productssection}>
 
             <Grid container spacing={2}>
-                <Grid item xs={3}>
+                <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
                     <Card className={Styles.card}>
                         <CardActionArea>
                             <CardMedia className={Styles.cardImg}
@@ -66,7 +66,7 @@ export default function products() {
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
                     <Card className={Styles.card}>
                         <CardActionArea>
                             <CardMedia className={Styles.cardImg}
@@ -100,7 +100,7 @@ export default function products() {
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
                     <Card className={Styles.card}>
                         <CardActionArea>
                             <CardMedia className={Styles.cardImg}
@@ -134,7 +134,7 @@ export default function products() {
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
                     <Card className={Styles.card}>
                         <CardActionArea>
                             <CardMedia className={Styles.cardImg}
@@ -168,12 +168,10 @@ export default function products() {
                         </CardActions>
                     </Card>
                 </Grid>
-
-
             </Grid>
 
             <Grid container mt={2} spacing={2}>
-                <Grid item xs={3}>
+                <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
                     <Card className={Styles.card}>
                         <CardActionArea>
                             <CardMedia className={Styles.cardImg}
@@ -207,7 +205,7 @@ export default function products() {
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
                     <Card className={Styles.card}>
                         <CardActionArea>
                             <CardMedia className={Styles.cardImg}
@@ -241,7 +239,7 @@ export default function products() {
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
                     <Card className={Styles.card}>
                         <CardActionArea>
                             <CardMedia className={Styles.cardImg}
@@ -275,7 +273,7 @@ export default function products() {
                         </CardActions>
                     </Card>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
                     <Card className={Styles.card}>
                         <CardActionArea>
                             <CardMedia className={Styles.cardImg}
@@ -309,8 +307,6 @@ export default function products() {
                         </CardActions>
                     </Card>
                 </Grid>
-
-
             </Grid>
 
         </Container>

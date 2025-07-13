@@ -41,3 +41,24 @@
     padding: 7px 0;
     border-radius: 20px;
 }
+
+.FooterLogo {
+    padding: 15px 0;
+}
+
+.FooterLogo img {
+    height: 140px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.FooterLogo h6 {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+}
+
+.FooterLogo p {
+    font-size: 15px;
+    color: #fff;
+}

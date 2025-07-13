@@ -5,6 +5,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Container } from '@mui/material';
 import Styles from './footer.module.css';
+import Logo from '../../assets/logo.png';
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: '#fff',
     ...theme.typography.body2,
@@ -19,51 +20,29 @@ export default function footer() {
     return (<>
 
         <Box className={Styles.Footer}>
-            <Container fixed spacing={2}>
-                <Grid container>
-                    <Grid size={2}>
-                        <Box className={Styles.footermenu}>
-                            <h5>Info</h5>
-                            <ul>
-                                <li>
-                                    <a href="#">Track Your Order</a>
-                                </li>
-                                <li>
-                                    <a href="index.html">Our Blog</a>
-                                </li>
-                                <li>
-                                    <a href="#">Privacy policy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Shipping</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Help</a>
-                                </li>
-                                <li>
-                                    <a href="#">Community</a>
-                                </li>
-                            </ul>
+            <Container fixed>
+                <Grid container spacing={2}>
+
+                    <Grid size={3}>
+                        <Box className={Styles.FooterLogo}>
+                            <img src={Logo} alt="newlogo" />
+                            <h6> Everything You Need, Just a Click Away </h6>
+                            <p> Discover a seamless online shopping experience with top deals, fast shipping, and a wide range of products</p>
                         </Box>
                     </Grid>
+
                     <Grid size={2}>
                         <Box className={Styles.footermenu}>
                             <h5>About</h5>
                             <ul>
                                 <li>
-                                    <a href="#">History</a>
-                                </li>
-                                <li>
-                                    <a href="#">Our Team</a>
+                                    <a href="#">About Us</a>
                                 </li>
                                 <li>
                                     <a href="#">Services</a>
                                 </li>
                                 <li>
-                                    <a href="#">Company</a>
+                                    <a href="#">Contact Us</a>
                                 </li>
                                 <li>
                                     <a href="#">Manufacture</a>
@@ -77,77 +56,82 @@ export default function footer() {
                             </ul>
                         </Box>
                     </Grid>
+
                     <Grid size={2}>
                         <Box className={Styles.footermenu}>
-                            <h5>Women Shoes</h5>
+                            <h5>Usefull Links</h5>
                             <ul>
                                 <li>
-                                    <a href="#">Track Your Order</a>
+                                    <a href="#">Usefull Links </a>
                                 </li>
                                 <li>
-                                    <a href="index.html">Our Blog</a>
-                                </li>
-                                <li>
-                                    <a href="#">Privacy policy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Shipping</a>
+                                    <a href="#">Services</a>
                                 </li>
                                 <li>
                                     <a href="#">Contact Us</a>
                                 </li>
                                 <li>
-                                    <a href="#">Help</a>
+                                    <a href="#">Manufacture</a>
                                 </li>
                                 <li>
-                                    <a href="#">Community</a>
+                                    <a href="#">Wholesale</a>
+                                </li>
+                                <li>
+                                    <a href="#">Retail</a>
                                 </li>
                             </ul>
                         </Box>
                     </Grid>
+
                     <Grid size={2}>
                         <Box className={Styles.footermenu}>
-                            <h5>Popular</h5>
+                            <h5>Monsoon Offers </h5>
                             <ul>
                                 <li>
-                                    <a href="#">Prices Drop</a>
+                                    <a href="#">Men's Fashion </a>
                                 </li>
                                 <li>
-                                    <a href="#">New Products</a>
+                                    <a href="#">Women's Fashion </a>
                                 </li>
                                 <li>
-                                    <a href="#">Best Sales</a>
+                                    <a href="#">Sports Wear</a>
                                 </li>
                                 <li>
-                                    <a href="index.html">Stores</a>
+                                    <a href="#">Sports Shoes</a>
                                 </li>
                                 <li>
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modallogin">Login</a>
+                                    <a href="#">Party Wear</a>
                                 </li>
                                 <li>
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modallong">Cart</a>
+                                    <a href="#">Child's Fashion</a>
                                 </li>
                             </ul>
                         </Box>
                     </Grid>
+
                     <Grid size={3}>
                         <Box className={Styles.footermenu}>
                             <h5>Get In Touch</h5>
                             <Box>
                                 <ul>
-                                    <li><b>Location:</b>Kanta Chauraha, Sindhi Colony, Jhotwara, Jaipur, Rajasthan 302012</li>
                                     <li><b>Contact:</b>+91 9991303458</li>
                                     <li><b>Whatsapp:</b>+91 9991303458</li>
-                                    <li><b>Email Address:</b> skmart@gmail.com</li>
+                                    <li><b>Email Id:</b> skmart@gmail.com</li>
+                                    <li><b>Email Id:</b> skmart@gmail.com</li>
+                                    <li><b>Location:</b>&nbsp;Jaipur, Rajasthan 302012</li>
                                 </ul>
                             </Box>
                         </Box>
                     </Grid>
+
+                    {/* copyright  */}
+
                     <Grid size={12}>
                         <Box className={Styles.copyright}>
                             <p>© 2025 | Made by Sameer Khan</p>
                         </Box>
                     </Grid>
+
                 </Grid>
             </Container>
         </Box>
