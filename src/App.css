@@ -147,3 +147,83 @@
     color: var(--primary);
     padding-left: 5px;
 }
+
+.AddressPage {
+    padding: 20px 0;
+}
+
+.AddressPage h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.AddressPage h6 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #f9d6d2;
+    padding: 4px 10px;
+    border-radius: 3px;
+}
+
+.AddressPage input {
+    font-size: 14px;
+}
+
+.AddressPage .submitBtn {
+    background-color: #e74d3d;
+    width: 20%;
+    color: white;
+    padding: 8px 0;
+}
+
+/* confirm order page  */
+
+.ConfirmOrder {
+    padding: 20px 0;
+}
+
+.ConfirmOrder h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.ConfirmOrder h6 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #f9d6d2;
+    padding: 4px 10px;
+    border-radius: 3px;
+}
+
+.ConfirmOrder input {
+    font-size: 14px;
+}
+
+.ConfirmOrder .submitBtn {
+    background-color: #e74d3d;
+    width: 20%;
+    color: white;
+    padding: 8px 0;
+}
+
+/* order success  */
+.Ordersuccess {
+    padding: 20px 0;
+}
+
+.Ordersuccess h4 {
+    margin-bottom: 20px;
+    color: #e74d3d;
+}
+
+.Ordersuccess .submitBtn {
+    background-color: #e74d3d;
+    color: white;
+    padding: 8px 15px;
+}
+
+.Ordersuccess .continueBtn {
+    background-color: green;
+    color: white;
+    padding: 8px 15px;
+}

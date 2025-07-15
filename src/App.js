@@ -9,6 +9,8 @@ import Cart from './pages/cart';
 import NotFound from './components/not-found/notfound';
 import Adminlogin from './pages/admin-login';
 import Address from './pages/address';
+import Confirm from './pages/confirm';
+import Success from './pages/success';
 
 function App() {
   return (
@@ -21,7 +23,9 @@ function App() {
         <Route path="/Cart" element={<Cart />} />
         <Route path="*" element={<NotFound />} />
         <Route path="admin-login" element={<Adminlogin />} />
-        <Route path="Address" element={<Address/>} />
+        <Route path="Address" element={<Address />} />
+        <Route path="Confirm" element={<Confirm />} />
+        <Route path="Success" element={<Success />} />
       </Routes>
     </BrowserRouter>
   );

@@ -129,7 +129,9 @@ export default function Cart() {
                                     on this order</strong>
                             </Box>
                             <Box class="col-lg-12">
-                                <Link to="../Address"> <p className={Styles.btnsuccess}>Place Order</p></Link>
+                                <Box className={Styles.btnsuccess}>
+                                    <Link to="../Address">Place Order</Link>
+                                </Box>
                             </Box>
                         </Box>
                     </Grid>
