@@ -4,6 +4,7 @@ import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import '../App.css';
 import Success from '../assets/success.png';
+import { Link } from 'react-router-dom';
 export default function success() {
     return (
         <Grid>
@@ -48,11 +49,11 @@ export default function success() {
                         </Box>
 
                         <Box textAlign="center">
-                            <Button className='submitBtn' href='/' sx={{ marginRight: 2 }}>
-                                Back to Home
+                            <Button className='submitBtn' sx={{ marginRight: 2 }}>
+                                <Link to="/"> Back to Home</Link>
                             </Button>
-                            <Button className='continueBtn' href='/ProductDetail'>
-                                Continue Shopping
+                            <Button className='continueBtn'>
+                                <Link to="/ProductDetail"> Continue Shopping</Link>
                             </Button>
                         </Box>
                     </Container>

@@ -147,7 +147,7 @@ export default function Header() {
                                 <React.Fragment>
                                     <Box className={Styles.headerCartBtn} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'end', textAlign: 'center' }}>
                                         <IconButton >
-                                            <AddShoppingCartIcon />
+                                            <Link to="../Cart"> <AddShoppingCartIcon /></Link>
                                         </IconButton>
                                         <IconButton >
                                             <NotificationsIcon />

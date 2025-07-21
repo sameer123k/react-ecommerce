@@ -3,6 +3,7 @@ import { Container, Grid, Typography, Box, Paper, Button, Divider } from '@mui/m
 import '../App.css';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
+import { Link } from 'react-router-dom';
 
 export default function confirm() {
     return (
@@ -46,8 +47,8 @@ export default function confirm() {
 
                         {/* Confirmation Button */}
                         <Box textAlign="center">
-                            <Button className='submitBtn' href='../Success'>
-                                Submit Order
+                            <Button className='submitBtn'>
+                                <Link to="../Success">   Submit Order</Link>
                             </Button>
                         </Box>
                     </Container>

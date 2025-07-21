@@ -176,6 +176,11 @@
     padding: 8px 0;
 }
 
+.AddressPage .submitBtn a {
+    color: #fff;
+    text-decoration: none;
+}
+
 /* confirm order page  */
 
 .ConfirmOrder {
@@ -206,6 +211,11 @@
     padding: 8px 0;
 }
 
+.ConfirmOrder .submitBtn a {
+    color: #fff;
+    text-decoration: none;
+}
+
 /* order success  */
 .Ordersuccess {
     padding: 20px 0;
@@ -222,8 +232,18 @@
     padding: 8px 15px;
 }
 
+.Ordersuccess .submitBtn a {
+    color: white;
+    text-decoration: none;
+}
+
 .Ordersuccess .continueBtn {
     background-color: green;
     color: white;
     padding: 8px 15px;
+}
+
+.Ordersuccess .continueBtn a {
+    color: white;
+    text-decoration: none;
 }

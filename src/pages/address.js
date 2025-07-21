@@ -5,6 +5,7 @@ import Footer from '../components/footer/footer';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
+import { Link } from 'react-router-dom';
 import '../App.css';
 export default function address() {
     return (
@@ -97,8 +98,8 @@ export default function address() {
 
                             {/* Submit Button */}
                             <Box textAlign="center">
-                                <Button className='submitBtn' href='../Confirm'>
-                                    Submit
+                                <Button className='submitBtn'>
+                                    <Link to="../Confirm"> Submit </Link>
                                 </Button>
                             </Box>
                         </Box>
